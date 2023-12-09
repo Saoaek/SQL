@@ -25,3 +25,5 @@ Sales => Sales of the Product.
 Quantity => Quantity of the Product.
 Discount => Discount provided.
 Profit => Profit/Loss incurred.
+
+### The project aims to answer below questions:
