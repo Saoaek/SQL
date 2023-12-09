@@ -11,7 +11,7 @@
 -- The average total profit has increased in every quarter and peaked in quarter 4.
 
 	SELECT *,
-	ROUND(AVG(total_profit) OVER(PARTITION BY quarter)) AS avg_total_profit
+	 ROUND(AVG(total_profit) OVER(PARTITION BY quarter)) AS avg_total_profit
 	FROM (
 	SELECT  NTILE(4) OVER(ORDER BY strftime('%m', order_date)) AS quarter,
 	 strftime('%m', order_date) As month,
