@@ -9,17 +9,19 @@
 ---------------------------------------------------------------------------------------------
 
 -- The average total profit has increased in every quarter and peaked in quarter 4.
-
-	SELECT *,
-	 ROUND(AVG(total_profit) OVER(PARTITION BY quarter)) AS avg_total_profit
-	FROM (
+	WITH temp_table AS
+	(
 	SELECT  NTILE(4) OVER(ORDER BY strftime('%m', order_date)) AS quarter,
 	 strftime('%m', order_date) As month,
 	 ROUND(SUM(Sales)) AS total_sales,
 	 ROUND(SUM(profit)) AS total_profit
 	FROM Superstore
 	GROUP BY 2
-	);
+	)
+
+	SELECT *,
+	ROUND(AVG(total_profit) OVER(PARTITION BY quarter)) AS avg_total_profit
+	FROM temp_table;
 	
 ---------------------------------------------------------------------------------------------
 
@@ -42,31 +44,41 @@
 ---------------------------------------------------------------------------------------------
 
 -- The average sales per customer
-
-	SELECT ROUND(AVG(total_sales)) AS avg_sales_per_cus
-	FROM (
+	WITH total_sales_per_cus AS
+	(
 	SELECT Customer_ID,
 	 ROUND(SUM(sales)) AS total_sales
 	FROM superstore
-	GROUP BY 1);
+	GROUP BY 1
+	)
+
+	SELECT ROUND(AVG(total_sales)) AS avg_sales_per_cus
+	FROM total_sales_per_cus;
 
 -- The average sales per order.
 
-	SELECT ROUND(AVG(total_sales)) AS avg_sales_per_order
-	FROM (
+	WITH total_sales_per_order AS
+	(
 	SELECT Order_ID,
 	 ROUND(SUM(sales)) AS total_sales
 	FROM superstore
-	GROUP BY 1);
-		
--- The average item per order	
+	GROUP BY 1
+	)
 
-	SELECT ROUND(AVG(item)) AS avg_item_per_order
-	FROM (
+	SELECT ROUND(AVG(total_sales)) AS avg_sales_per_order
+	FROM total_sales_per_order;
+		
+-- The average product per order	
+
+	WITH product_per_order AS
+	(
 	SELECT Order_ID,
-	 COUNT(*) AS item
+	 COUNT(*) AS product
 	FROM superstore
-	GROUP BY 1);
+	GROUP BY 1)
+
+	SELECT ROUND(AVG(product)) AS avg_product_per_order
+	FROM product_per_order;
 
 ---------------------------------------------------------------------------------------------
 
@@ -222,12 +234,14 @@
 -- The top 10 products in each segment that generate the highest profit.
 
 	WITH top_10_highest AS
-	(SELECT Segment,
+	(
+	SELECT Segment,
 	 Product_name,
 	 ROUND(SUM(Profit)) AS total_profit,
 	 DENSE_RANK() OVER(PARTITION BY Segment ORDER BY SUM(Profit) DESC) AS rank
 	FROM superstore
-	GROUP BY 1,2)
+	GROUP BY 1,2
+	)
 	
 	SELECT * FROM top_10_highest
 	WHERE rank BETWEEN 1 AND 10;
@@ -236,12 +250,14 @@
 -- The top 10 products in each segment that generate the lowest profit.
 
 	WITH top_10_lowest AS
-	(SELECT Segment,
+	(
+	SELECT Segment,
 	 Product_name,
 	 ROUND(SUM(Profit)) AS total_profit,
 	 DENSE_RANK() OVER(PARTITION BY Segment ORDER BY SUM(Profit)) AS rank
 	FROM superstore
-	GROUP BY 1,2)
+	GROUP BY 1,2
+	)
 	
 	SELECT * FROM top_10_lowest
 	WHERE rank BETWEEN 1 AND 10;
