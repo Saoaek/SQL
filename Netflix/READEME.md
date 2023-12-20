@@ -28,4 +28,4 @@ The analysis includes various SQL queries to uncover insights into Netflix's con
 - Movies with a TV-MA rating tend to have varied durations, while TV shows have more consistent seasonal durations.
 
 ## Conclusions
-This analysis sheds light on Netflix's evolving content strategy and its focus areas. The shift towards movies, particularly with TV-MA ratings, indicates a strategic direction aimed at catering to a specific audience demographic. The insights gleaned from this analysis can inform content producers and marketers alike.
+This analysis highlights the evolving content strategy of Netflix and its focus areas. The noticeable shift towards movies, especially those with TV-MA ratings, suggests a strategic move to target a specific audience demographic. The insights derived from this analysis are valuable for content producers and marketers.
