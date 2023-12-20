@@ -103,55 +103,6 @@
 	END;
 	```
  
--- It appears that the 'date_added' column is messy and cannot be sorted, so it needs to be transformed into the 'YYYY-MM-DD' format.
-	```
-	SELECT date_added
-	FROM netflix
-	WHERE date_added IS NOT NULL
-	ORDER BY date_added;
-	```
-	
--- Some rows have spaces and need to be trimmed.
-	```
-	UPDATE netflix
-	SET date_added = TRIM(date_added);
-	```
-	
--- Add new column 
-	```
-	ALTER TABLE netflix
-	ADD COLUMN new_date DATE
-	```
-	
--- Update value
-	```
-	UPDATE netflix
-	SET new_date = substr(date_added, -4) || '-' || 
-   CASE
-    WHEN substr(date_added, 1, 3) = 'Jan' THEN '01'
-    WHEN substr(date_added, 1, 3) = 'Feb' THEN '02'
-    WHEN substr(date_added, 1, 3) = 'Mar' THEN '03'
-    WHEN substr(date_added, 1, 3) = 'Apr' THEN '04'
-    WHEN substr(date_added, 1, 3) = 'May' THEN '05'
-    WHEN substr(date_added, 1, 3) = 'Jun' THEN '06'
-    WHEN substr(date_added, 1, 3) = 'Jul' THEN '07'
-    WHEN substr(date_added, 1, 3) = 'Aug' THEN '08'
-    WHEN substr(date_added, 1, 3) = 'Sep' THEN '09'
-    WHEN substr(date_added, 1, 3) = 'Oct' THEN '10'
-    WHEN substr(date_added, 1, 3) = 'Nov' THEN '11'
-    WHEN substr(date_added, 1, 3) = 'Dec' THEN '12'
-   END
-  || '-' 
-  || CASE 
-    WHEN instr(date_added, ",") - instr(date_added, " ") = 2 THEN '0' || substr(date_added, instr(date_added, " ") + 1, 1)
-    ELSE substr(date_added, instr(date_added, " ") + 1, 2)
-  END;
-  ```
-  
-	```
-	SELECT new_date
-	FROM netflix
-	```
 -------------------------------------------------------------------------------
 
 -- Cleaning the rating colum
@@ -216,9 +167,64 @@
 		ELSE rating
 	END;
 	```
-----------------------------------------------------------------------   
- 
--- Cleaning the 'duration' column by splitting it into 'duration_min' and 'duration_season'
+	-- Finished cleaning section --
+----------------------------------------------------------------------  
+
+**Data Transformation**
+
+-- It appears that the 'date_added' column is messy and cannot be sorted, so it needs to be transformed into the 'YYYY-MM-DD' format.
+	```
+	SELECT date_added
+	FROM netflix
+	WHERE date_added IS NOT NULL
+	ORDER BY date_added;
+	```
+	
+-- Some rows have spaces and need to be trimmed.
+	```
+	UPDATE netflix
+	SET date_added = TRIM(date_added);
+	```
+	
+-- Add new column 
+	```
+	ALTER TABLE netflix
+	ADD COLUMN new_date DATE
+	```
+	
+-- Update value
+	```
+	UPDATE netflix
+	SET new_date = substr(date_added, -4) || '-' || 
+   CASE
+    WHEN substr(date_added, 1, 3) = 'Jan' THEN '01'
+    WHEN substr(date_added, 1, 3) = 'Feb' THEN '02'
+    WHEN substr(date_added, 1, 3) = 'Mar' THEN '03'
+    WHEN substr(date_added, 1, 3) = 'Apr' THEN '04'
+    WHEN substr(date_added, 1, 3) = 'May' THEN '05'
+    WHEN substr(date_added, 1, 3) = 'Jun' THEN '06'
+    WHEN substr(date_added, 1, 3) = 'Jul' THEN '07'
+    WHEN substr(date_added, 1, 3) = 'Aug' THEN '08'
+    WHEN substr(date_added, 1, 3) = 'Sep' THEN '09'
+    WHEN substr(date_added, 1, 3) = 'Oct' THEN '10'
+    WHEN substr(date_added, 1, 3) = 'Nov' THEN '11'
+    WHEN substr(date_added, 1, 3) = 'Dec' THEN '12'
+   END
+  || '-' 
+  || CASE 
+    WHEN instr(date_added, ",") - instr(date_added, " ") = 2 THEN '0' || substr(date_added, instr(date_added, " ") + 1, 1)
+    ELSE substr(date_added, instr(date_added, " ") + 1, 2)
+  END;
+  ```
+  
+	```
+	SELECT new_date
+	FROM netflix
+	```
+		
+----------------------------------------------------------------------
+		
+-- Split the 'duration' column into 'duration_min' and 'duration_season'
 	```
 	SELECT duration   
 	FROM netflix
@@ -266,8 +272,10 @@
 	FROM netflix
 	WHERE duration_season IS NOT NULL;
 	```
-	-- Finished cleaning section
+	
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ 
+
+**Exploratory data analysis**
 
 -- Counting the number of movies in the dataset
    ```
