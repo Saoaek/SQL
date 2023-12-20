@@ -35,7 +35,7 @@ The analysis phase encompassed a variety of queries to derive meaningful insight
 1. The Asian continent, primarily driven by the populations of China and India, holds a commanding lead in global population numbers.
 2. Most countries worldwide experienced population growth from 2000 to 2010, with India seeing the most significant increase.
 3. A smaller group of countries, mainly in Europe, experienced population declines.
-4. Russia's decreasing population trend over the decade was a notable exception among the major countries.
+4. Russia stood out as a major country with a declining population trend throughout the decade
 5. China held the highest population figure in Asia, while Niue had the lowest in Oceania.
 
 This project provides crucial insights into global population dynamics, highlighting significant trends and variances across different continents and countries.
