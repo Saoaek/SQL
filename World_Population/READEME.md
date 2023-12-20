@@ -3,19 +3,9 @@
 ## Project Overview
 Today, the world's population is constantly increasing, and understanding the drivers behind these changes is crucial. This project involves an in-depth exploration of world population data, focusing on examining the trends of population growth in each country or region. Such an analysis can aid in preparing for the challenges that countries face both today and in the future.
 
-## Exploratory Data Analysis
-The initial phase involved checking for duplicates and missing values in the 'countries' and 'population_years' tables. This process helped ensure the integrity and reliability of the dataset for further analysis.
+## Dataset Description
 
-- **Duplicate Check**: Performed in both 'countries' and 'population_years' tables to ensure uniqueness.
-- **Missing Values**: Identified and assessed missing values in key fields of both tables.
-- **Country Details**: Additional inspection was conducted for specific country_ids, notably 62 & 210.
-- **Joining Tables**: A left join between 'countries' and 'population_years' provided a more comprehensive view of the data.
 
-## Data Cleaning
-The next step involved cleaning the dataset, which included:
-
-- **Deleting Missing Values**: Records with missing IDs or critical fields were removed.
-- **Updating Values**: Population data for specific years and countries were updated for accuracy.
 
 ## SQL Queries
 
