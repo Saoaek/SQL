@@ -28,7 +28,7 @@ The analysis phase encompassed a variety of queries to derive meaningful insight
 ## Significant Findings
 - **Population Distribution**: The Asian continent had the highest population in 2010, with significant contributions from China and India.
 - **Population Increase**: A majority of countries (188 out of 212) experienced a population increase, with India recording the highest growth.
-- **Population Decrease**: 24 countries saw a decrease in population, predominantly in Europe.
+- **Population Decrease**: A total of 24 countries, mainly in Europe, observed a decrease in their population.
 - **Population Rankings and Percentages**: Calculated and ranked countries based on their population in 2010 and their respective global population percentages.
 
 ## Conclusions
