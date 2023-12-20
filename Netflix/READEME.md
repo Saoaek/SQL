@@ -4,7 +4,7 @@
 This project aims to analyze the extensive database of movies and TV shows available on Netflix. With over 8,000 titles and 200M subscribers globally, this analysis provides insights into content trends, preferences, and the evolution of Netflix's library over time.
 
 ## Dataset Description
-The dataset includes listings of all movies and TV shows on Netflix, with details like cast, directors, ratings, release year, and duration. It's a comprehensive snapshot of Netflix's content as of mid-2021.
+The dataset includes listings of all movies and TV shows on Netflix, with details like cast, directors, ratings, release year, and duration.
 
 ## Data Cleaning and Transformation
 The project begins with extensive data cleaning and preparation, including:
