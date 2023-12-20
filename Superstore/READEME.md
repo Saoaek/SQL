@@ -1,7 +1,7 @@
 # Superstore Sales Analysis
 
 ## Project Overview
-This analysis offers an in-depth examination of the sales data of a major Superstore. The primary aim is to gain insights into the trends in sales, behaviors of customers, and the efficiency of operations to inform and guide strategic decision-making. The focus is on identifying profitable products, key customer segments, and crucial regions.
+This analysis offers an in-depth examination of the sales data of a Superstore. The primary aim is to gain insights into the trends in sales, behaviors of customers, and the efficiency of operations to inform and guide strategic decision-making. The focus is on identifying profitable products, key customer segments, and crucial regions.
 
 ## Dataset Description
 The dataset features detailed transactions recorded at a superstore. It encompasses vital data points such as:
