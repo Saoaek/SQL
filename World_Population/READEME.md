@@ -32,7 +32,7 @@ The analysis phase encompassed a variety of queries to derive meaningful insight
 - **Population Rankings and Percentages**: This part of the analysis involved calculating and ranking countries based on their 2010 populations, as well as determining their percentages of the global population.
 
 ## Conclusions
-1. The Asian continent, led by China and India, dominates global population figures.
+1. The Asian continent, primarily driven by the populations of China and India, holds a commanding lead in global population numbers.
 2. Most countries worldwide experienced population growth from 2000 to 2010, with India seeing the most significant increase.
 3. A smaller group of countries, mainly in Europe, experienced population declines.
 4. Russia's decreasing population trend over the decade was a notable exception among the major countries.
