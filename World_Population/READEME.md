@@ -17,7 +17,7 @@ The next step involved cleaning the dataset, which included:
 - **Deleting Missing Values**: Records with missing IDs or critical fields were removed.
 - **Updating Values**: Population data for specific years and countries were updated for accuracy.
 
-## Data Analysis and Insights
+## SQL Queries
 The analysis phase covered a wide range of queries to extract meaningful insights:
 
 - **Continental Overview**: Determined the number of continents and countries per continent, along with their total populations.
