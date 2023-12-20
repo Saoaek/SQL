@@ -21,11 +21,11 @@ The project utilizes a series of SQL queries for a thorough analysis of the data
 - **Segment Analysis**: Compares sales and profit across different customer segments, underlining the notably high-profit margins in the Home Office segment.
 
 ## Key Findings
-- The Western region emerges as the one with the highest profit margin.
-- Notable decreases in profit were observed in Texas and Illinois, specifically in the categories of Office Supplies and Furniture.
-- The Consumer segment displays the highest level of spending, while the Home Office segment enjoys larger profit margins.
-- Despite substantial sales figures, the Furniture category suffers from relatively low profit margins.
-- The Copiers sub-category is found to generate the highest overall profit.
+- **Western Region Profitability:** The Western region stands out as having the highest profit margin.
+- **Challenges in Texas and Illinois:** A significant drop in profits was noted in Texas and Illinois, particularly in the Office Supplies and Furniture categories.
+- **Consumer Spending vs. Home Office Profits:** While the Consumer segment shows the highest spending levels, the Home Office segment achieves greater profit margins.
+- **Furniture Category Profitability:** Despite impressive sales, the Furniture category experiences comparatively lower profit margins.
+- **Copiers Sub-Category Performance:** The Copiers sub-category consistently yields the highest profits.
 
 ## Conclusions
 This detailed analysis provides pivotal insights into the functioning and market performance of the superstore. It points out areas that require improvement, particularly in specific regions and product categories. These findings are valuable for formulating targeted strategies to boost profitability and operational efficiency.
