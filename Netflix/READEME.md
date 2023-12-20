@@ -12,7 +12,7 @@ The project begins with extensive data cleaning and preparation, including:
 - **Date Added**: Transformation of the 'date_added' column into a sortable 'YYYY-MM-DD' format.
 - **Rating and Duration**: Cleaning and correcting errors in the 'rating' and 'duration' columns, and splitting 'duration' into 'duration_min' for movies and 'duration_season' for TV shows.
 
-## Key SQL Queries
+## SQL Queries
 The analysis includes various SQL queries to uncover insights into Netflix's content strategy. Key queries involve:
 - Counting the total number of movies and series.
 - Analyzing the length of titles and the distribution of content types (movies vs. TV shows).
