@@ -24,7 +24,6 @@ The analysis phase encompassed a variety of queries to derive meaningful insight
 - **Continental Overview:** This query determined the number of continents, the number of countries in each continent, and their total populations.
 - **Population Extremes:** This part identified the highest and lowest population figures for each continent.
 - **Decadal Population Change:** Focused on countries like Russia, examining population decreases over the past decade.
-- **Population Trends View Creation:** Involved creating views to categorize countries based on their population trends from 2000 to 2010.
 
 ## Significant Findings
 - **Population Distribution**: The Asian continent had the highest population in 2010, with significant contributions from China and India.
