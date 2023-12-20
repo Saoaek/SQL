@@ -25,7 +25,7 @@ The analysis phase encompassed a variety of queries to derive meaningful insight
 - **Population Extremes:** This part identified the highest and lowest population figures for each continent.
 - **Decadal Population Change:** Focused on countries like Russia, examining population decreases over the past decade.
 
-## Findings and Insights
+## Key Findings
 - **Population Distribution**: The Asian continent had the highest population in 2010, with significant contributions from China and India.
 - **Population Increase**: A majority of countries (188 out of 212) experienced a population increase, with India recording the highest growth.
 - **Population Decrease**: A total of 24 countries, mainly in Europe, observed a decrease in their population.
