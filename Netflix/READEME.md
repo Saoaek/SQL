@@ -1,7 +1,7 @@
 # Netflix Content Analysis Project
 
 ## Project Overview
-This project aims to analyze the extensive database of movies and TV shows available on Netflix. With over 8,000 titles and 200M subscribers globally, this analysis provides insights into content trends, preferences, and the evolution of Netflix's library over time.
+This project aims to analyze the extensive database of movies and TV shows available on Netflix. They have over 8000 movies or tv shows available on their platform, as of mid-2021, they have over 200M Subscribers globally. This analysis provides insights into content trends, preferences, and the evolution of Netflix's library over time.
 
 ## Dataset Description
 The dataset includes listings of all movies and TV shows on Netflix, with details like cast, directors, ratings, release year, and duration.
