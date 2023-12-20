@@ -16,7 +16,7 @@ The project utilizes a series of SQL queries for a thorough analysis of the data
 
 - **Sales and Profit Analysis**: Covers the total sales and profits on an annual basis, the average profit per quarter, and the impact of different shipping modes.
 - **Customer Insights**: Involves identifying unique customers, analyzing average sales per customer and per order, and highlighting top customers by sales and profit.
-- **Product Performance**: This entails an analysis of the best and worst-performing products across different segments.
+- **Product Performance**: This related to an analysis of the best and worst-performing products across different segments.
 - **Regional Analysis**: Focuses on comparing profit margins across various regions, with a particular emphasis on the challenges faced in the Central region in the office supplies and furniture categories.
 - **Segment Analysis**: Compares sales and profit across different customer segments, underlining the notably high-profit margins in the Home Office segment.
 
