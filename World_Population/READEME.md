@@ -1,6 +1,6 @@
 # World Population Analysis
 
-## Project Summary
+## Project Overview
 This project involves a thorough exploration of world population data, utilizing a range of SQL skills like Joins, CTEs, Temp Tables, Window Functions, Aggregate Functions, and the creation of Views.
 
 ## Exploratory Data Analysis
