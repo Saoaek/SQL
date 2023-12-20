@@ -4,7 +4,7 @@
 Today, the world's population is constantly increasing, and understanding the drivers behind these changes is crucial. This project involves an in-depth exploration of world population data, focusing on examining the trends of population growth in each country or region. Such an analysis can aid in preparing for the challenges that countries face both today and in the future.
 
 ## Dataset Description
-
+The dataset includes listings of all
 
 
 ## SQL Queries
